@@ -1,0 +1,11 @@
+#默认端口8080 现在在启动类中设置为手动输入
+spring:
+  application:
+    name: first-cloud-provider
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+    #注册到2个服务器中
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
